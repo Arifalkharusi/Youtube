@@ -29,6 +29,8 @@ const VideoPrev = ({ video }: VideoPrevProps) => {
         discription: video.snippet.description,
       })
     );
+
+    window.scrollTo(0, 0);
   };
 
   const API_KEY = "AIzaSyDRMwlchZ2LklZcVLlckdrXJrykZmy1l5c";
