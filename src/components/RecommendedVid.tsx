@@ -68,13 +68,11 @@ const RecommendedVid = ({ item }: RecommendedVidProps) => {
         <div className="text-sm font-semibold line-clamp-2">
           {item.snippet.title}
         </div>
-        <div className="text-xs">
+        <div className="text-xs dark:text-gray-400 ">
           <div>{item.snippet.channelTitle}</div>
           <div>
-            <div>
-              {viewCount(viewsData?.statistics.viewCount)} views &bull;{" "}
-              {datePublished(item.snippet.publishTime)}
-            </div>
+            {viewCount(viewsData?.statistics.viewCount)} views &bull;{" "}
+            {datePublished(item.snippet.publishTime)}
           </div>
         </div>
       </div>

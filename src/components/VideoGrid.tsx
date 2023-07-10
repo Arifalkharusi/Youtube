@@ -25,7 +25,7 @@ const VideoGrid = () => {
   }, [search]);
 
   return (
-    <div className="md:ml-[70px] p-5 grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 md:grid-cols-3  xl:grid-cols-4">
+    <div className="md:ml-[70px] p-5 grid grid-cols-1 gap-x-5 gap-y-8 sm:grid-cols-2 md:grid-cols-3  xl:grid-cols-4 dark:bg-gray-950">
       {data?.map(
         (item) =>
           item.id.kind.split("#")[1] === "video" && <VideoPrev video={item} />

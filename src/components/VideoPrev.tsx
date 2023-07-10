@@ -82,10 +82,10 @@ const VideoPrev = ({ video }: VideoPrevProps) => {
           <div className="flex flex-col gap-1 cursor-pointer">
             <div className="font-semibold line-clamp-2">{title}</div>
             <div>
-              <div className="text-sm text-gray-600 line-clamp-1">
+              <div className="text-sm text-gray-600 line-clamp-1 dark:text-gray-400">
                 {channelTitle}
               </div>
-              <div className="text-sm text-gray-600">
+              <div className="text-sm text-gray-600 dark:text-gray-400">
                 {viewCount(viewsData?.statistics.viewCount)} views &bull;{" "}
                 {datePublished(video.snippet.publishTime)}
               </div>

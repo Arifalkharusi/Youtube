@@ -33,10 +33,10 @@ const Header = () => {
   };
 
   return (
-    <div className="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-4 py-2 bg-white">
+    <div className="fixed top-0 left-0 z-50 flex items-center justify-between w-full px-4 py-2 bg-white dark:bg-gray-950">
       <div className="flex items-center gap-3 ">
         <div className="cursor-pointer">
-          <div className="relative p-2 rounded-full hover:bg-gray-100 group">
+          <div className="relative p-2 rounded-full hover:bg-gray-100 group dark:hover:bg-gray-900">
             <RxHamburgerMenu size={23} />
             <ToolTip>Menu</ToolTip>
           </div>
@@ -53,15 +53,15 @@ const Header = () => {
             type="text"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            className="w-full p-2 border-[1px] focus:border-blue-800 border-gray-400 shadow-inner px-7 rounded-s-3xl focus:outline-none"
+            className="w-full p-2 border-[1px] focus:border-blue-800 border-gray-400 shadow-inner px-7 rounded-s-3xl focus:outline-none dark:border-gray-900 dark:bg-gray-950"
             placeholder="Search"
           />
-          <button className="flex items-center justify-center h-full px-6 py-[10px] border-[1px] border-l-0 border-gray-400 cursor-pointer bg-gray-100 rounded-e-3xl hover:bg-gray-200 relative group">
+          <button className="flex items-center justify-center h-full px-6 py-[10px] border-[1px] border-l-0 border-gray-400 cursor-pointer bg-gray-100 rounded-e-3xl hover:bg-gray-200 relative dark:hover:bg-gray-800 group dark:bg-gray-900 dark:border-gray-800">
             <GoSearch size={20} />
             <ToolTip>Search</ToolTip>
           </button>
         </form>
-        <div className="relative hidden p-3 rounded-full cursor-pointer hover:bg-gray-100 md:block group">
+        <div className="relative hidden p-3 rounded-full cursor-pointer hover:bg-gray-100 md:block group dark:hover:bg-gray-900">
           <BsFillMicFill size={20} />
           <ToolTip>Search with your voice</ToolTip>
         </div>
